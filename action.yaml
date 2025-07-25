@@ -1,0 +1,18 @@
+name: 'Podcast Generator'
+author: 'Aleena Jomy'
+description: 'Generate a feed for a podcast from a YAML file'
+run:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon : 'git-branch'  
+  color: 'red'
+inputs:
+  email:   
+    description: The commiter's email address
+    request: true
+    defualt: ${{ github.actor }}@localhost
+  name:
+    description: Commiter's name
+    request: true
+    defualt: ${{ github.actor }}@localhost  
