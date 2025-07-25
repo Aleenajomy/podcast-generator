@@ -13,6 +13,6 @@ inputs:
     description: Committer's name
     required: true
     default: "${{ github.actor }}@localhost"
-run:
+runs:
   using: 'docker'
   image: 'Dockerfile'
